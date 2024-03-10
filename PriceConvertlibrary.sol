@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 //get funds from users，从用户获得酬金
 //withdraw funds提取酬金
-//set a minimum funding value，设置最小的酬金金额
+//t a minimum funding value，设置最小的酬金金额
 pragma solidity ^0.8.0;
-import "./AggregatorV3Interface.sol";
+import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
 library PriceConvert {
-    //library代表库
+    //接口
     function getprice() internal view returns (uint256) {
         //接口的函数用internal
         //ABI
